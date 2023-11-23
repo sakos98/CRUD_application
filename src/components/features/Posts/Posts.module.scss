@@ -1,0 +1,42 @@
+.card {
+  border: solid 1px black;
+  width: 25rem;
+  margin-top: 20px;
+}
+
+.positionCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.spanAuthor::before {
+  content: "Author: ";
+  font-weight: bold;
+}
+
+
+.spanPublished::before {
+  content: "Published: ";
+  font-weight: bold;
+}
+
+.spanCategory::before {
+  content: "Category: ";
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .positionCard {
+    display: flex;
+    flex-direction: column;
+  }
+}
